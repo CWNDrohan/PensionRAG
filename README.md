@@ -90,6 +90,3 @@ git clone https://github.com/cwndrohan/pension-rag-capstone.git
 
 # Install requirements
 pip install -r requirements.txt
-
-# Launch the Streamlit UI
-streamlit run app.py

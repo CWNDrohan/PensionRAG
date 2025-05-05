@@ -8,6 +8,10 @@ This project uses a **Retrieval-Augmented Generation (RAG)** approach to **autom
 
 The project specifically targets the NYCERS Tier 6 plan, but the system is designed to be generalizable to other pension funds in the future.
 
+## 📄 Pension Plan Resources
+
+- [NYCERS Plan Descriptions](https://www.nycers.org/plan-descriptions)
+
 ## 🧱 Tech Stack
 
 - **Python 3.10**

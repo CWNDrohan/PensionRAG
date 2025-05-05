@@ -40,7 +40,30 @@ The project specifically targets the NYCERS Tier 6 plan, but the system is desig
 | `"I’m 60 with 28 years of service and a $110K salary"` | 🧠 **Pension Calculation:** Age: 60, Years of Service: 28, Final Average Salary (FAS): $110,000. <br> Formula: 35% of FAS for the first 20 years, plus 2% for each year beyond 20. <br> Calculations: 35% × $110,000 = $38,500; 8 extra years: 8 × 2% = 16%; 16% × $110,000 = $17,600. <br> Subtotal: $38,500 + $17,600 = $56,100. <br> Early retirement penalty (age 60 is 3 years early × 6.5% = 19.5%): $56,100 × (1 - 0.195) = **$45,160.50 per year.** |
 | `"I’m 63 with 17 years of service and 3 years of military buyback"` | 🧠 **Pension Calculation:** Age: 63, Years of Service: 17 + 3 (military buyback) = 20, Final Average Salary (FAS): $95,000. <br> Formula: 35% of FAS for the first 20 years, plus 2% for each year beyond 20. <br> Calculations: 35% × $95,000 = $32,750. <br> No early retirement penalty applies (age 63). <br> **Final Pension: $32,750 per year.** |
 
-*Screenshots coming soon!*
+## 📸 Screenshots
+
+**🔍 FAISS Vector Index Build**
+
+This screenshot shows the system creating a semantic vector index using FAISS. It demonstrates chunking of pension documents and vector storage.
+
+![FAISS Vector Index](screenshots/FAISS.png)
+
+---
+
+**🔍 Parsing Pension Data**
+
+This screenshot shows how pension formulas, tables, and metadata are parsed and tagged from the pension PDF using PyMuPDF and pdfplumber.
+
+![Parsing Pension Data](screenshots/Parse.png)
+
+---
+
+**🔍 Query Example**
+
+This screenshot displays a sample pension query, including the user input and the full system response with detailed pension calculations and applied penalties.
+
+![Query Example](screenshots/Query.png)
+
 
 ## ⚡ Challenges and Solutions
 

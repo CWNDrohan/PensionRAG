@@ -111,9 +111,7 @@ While the Pension RAG model performs well for standard retirement scenarios, the
 - **User Input Validation:**  
   The system does basic validation of user inputs but does not yet handle ambiguous queries (e.g., "What if I retire earlier or later?") with full conversational follow-ups.
 
-### Future Work
-
-Planned improvements include enhanced handling of:
+### Planned improvements include enhanced handling of:
 - Service buybacks and military credits
 - Early/late retirement penalties from Tier 3 and Tier 6 tables
 - Final Average Salary (FAS) calculations over rolling time periods

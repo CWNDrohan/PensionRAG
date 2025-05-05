@@ -37,6 +37,14 @@ The project specifically targets the NYCERS Tier 6 plan, but the system is desig
 9. **Final Calculation** performed via Python for precise pension math  
 10. **Frontend UI** for user interaction and dynamic pension estimate generation
 
+## 📈 Tracking & Logs
+
+This project uses [Weights & Biases (W&B)](https://wandb.ai/) for experiment tracking and logging.
+
+👉 **View the experiment dashboard here:**  
+[W&B Pension RAG Project](https://wandb.ai/cwndroha-university-of-maryland-baltimore/pension-rag?nw=nwusercwndroha)
+
+
 ## 📝 Sample Output
 
 | **User Input** | **Model Output** |

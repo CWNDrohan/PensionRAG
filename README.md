@@ -88,6 +88,37 @@ This screenshot displays a sample pension query, including the user input and th
 | LLaMA 3.2 runaway text generation | Switched to Mistral-7B for more focused answers |
 | Table parsing from PDFs | Used pdfplumber + custom chunking strategies |
 
+## 🚧 Limitations & Edge Cases
+
+While the Pension RAG model performs well for standard retirement scenarios, there are several known limitations:
+
+- **Edge Case Handling:**  
+  The model may not fully handle complex cases such as:
+  - Employment gaps or breaks in service
+  - Military service buyback provisions
+  - Dual employment or part-time credits
+  - Maximum allowable salary caps (e.g., IRC §415 limits)
+
+- **Formula Interpretation:**  
+  Pension formulas are extracted from source documents, but rare or nuanced rules (e.g., early retirement penalties specific to certain tiers) may be misinterpreted by the model.
+
+- **Dynamic Updates:**  
+  If pension plan documents are updated, the model requires manual re-indexing of the source material to reflect changes.
+
+- **Arithmetic Accuracy:**  
+  While the LLM provides reasoning steps, all final pension calculations rely on Python logic to avoid numerical errors.
+
+- **User Input Validation:**  
+  The system does basic validation of user inputs but does not yet handle ambiguous queries (e.g., "What if I retire earlier or later?") with full conversational follow-ups.
+
+### Future Work
+
+Planned improvements include enhanced handling of:
+- Service buybacks and military credits
+- Early/late retirement penalties from Tier 3 and Tier 6 tables
+- Final Average Salary (FAS) calculations over rolling time periods
+- Scenario simulation (e.g., slider for years of service or salary)
+
 ## 🧪 Future Research Directions
 
 - Extend support for additional pension funds and tiers  

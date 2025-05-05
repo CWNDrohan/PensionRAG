@@ -23,8 +23,8 @@ There has been little work in field of applying RAG techniques to specific Pensi
 - **all-mpnet-base-v2** – Embedding model for semantic retrieval
 - **Mistral-7B-Instruct** – Language model for step-by-step pension reasoning
 - **Python math engine** – Final pension calculations done programmatically for precision
-- **Streamlit** (or Gradio) – Frontend user interface (✅ built)
-- **(Optional) MLflow** – Model/version tracking (pending)
+- **Gradio** – Frontend user interface (✅ built)
+- **W&B** – Model/version tracking
 
 ## 🛠️ System Architecture Overview
 
